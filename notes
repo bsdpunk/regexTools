@@ -1,0 +1,20 @@
+cat h.txt | ggrep -P '\d{7,7} $\d+\.\d+ .' | head
+cat xab | grep 'A\.'
+cat xab | grep -A1 'A\.'
+cat xab | grep -A1 'A\.' | grep -o '^[0-9]\{7,7\}'
+
+
+for i in cat head -n1 <(grep 'A\.' <(clear;cat xa$i | grep -A1 'A\.'))
+cat xad | grep '^[0-9]\{7,\}' xad | ggrep -P '$\d+\.\d+' | head -n1 | ggrep -o -P '[a-zA-Z]+.*'
+head -n1 <(grep 'A\.' <(clear;cat xa$i | grep -A1 'A\.'))
+for i in {a..z}; do grep $PN xaz | ggrep -P '$\d+\.\d+' | head -n1 | ggrep -o -P '[a-zA-Z]+.*'; done
+
+for i in {a..z}; 
+do
+PN=head -n1 <(grep 'A\.' <(clear;cat xa$i | grep -A1 'A\.'))
+
+ grep '^[0-9]\{7,\}' xaz | ggrep -P '$\d+\.\d+' | head -n1 | ggrep -o -P '[a-zA-Z]+.*'; done
+grep 'A\.' xad -A2 -B2 | grep -o '^[0-9]\{7,8\}'
+grep 26800120 b.txt -A6 | ggrep -P '26800120 $\d+\.\d+' -o | ggrep -P '\d+\.\d+' -o
+grep -P -o '\d{5}-\d{2}\w{0,1}' c.txt | sort | uniq
+grep '14093-84' c.txt  -B9 | grep '^[A-Z]\.' | sed 's/^[A-Z]\. //' | sed 's/^[A-Z ]\+       \([A-Z][a-z]\)/\1/' | sed 's/"//g' | grep '[A-Z ]\+' | tail -n1 | sed 's/[a-z].*//' | sed 's/.$//'
